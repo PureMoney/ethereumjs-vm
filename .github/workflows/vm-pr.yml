@@ -28,7 +28,7 @@ jobs:
 
       # Installs root dependencies, ignoring Bootstrap All script.
       # Bootstraps the current package only
-      - run: yarn --ignore-scripts && yarn run bootstrap:vm
+      - run: npx lerna bootstrap --scope @ethereumjs/vm
         if: steps.cache.outputs.cache-hit != 'true'
         working-directory: ${{github.workspace}}
 
@@ -79,7 +79,7 @@ jobs:
 
       # Installs root dependencies, ignoring Bootstrap All script.
       # Bootstraps the current package only
-      - run: yarn --ignore-scripts && yarn run bootstrap:vm
+      - run: npx lerna bootstrap --scope @ethereumjs/vm
         if: steps.cache.outputs.cache-hit != 'true'
         working-directory: ${{github.workspace}}
 
@@ -121,7 +121,7 @@ jobs:
 
       # Installs root dependencies, ignoring Bootstrap All script.
       # Bootstraps the current package only
-      - run: yarn --ignore-scripts && yarn run bootstrap:vm
+      - run: npx lerna bootstrap --scope @ethereumjs/vm
         if: steps.cache.outputs.cache-hit != 'true'
         working-directory: ${{github.workspace}}
 
@@ -148,7 +148,7 @@ jobs:
 
       # Installs root dependencies, ignoring Bootstrap All script.
       # Bootstraps the current package only
-      - run: yarn --ignore-scripts && yarn run bootstrap:vm
+      - run: npx lerna bootstrap --scope @ethereumjs/vm
         if: steps.cache.outputs.cache-hit != 'true'
         working-directory: ${{github.workspace}}
 
