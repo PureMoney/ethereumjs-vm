@@ -27,7 +27,7 @@ jobs:
 
       # This is specific to Nightly test 2/2.
       # Here, we generate new lockfiles
-      - run: npm install
+      - run: yarn
         working-directory: ${{github.workspace}}
 
       - run: yarn run build
@@ -52,7 +52,7 @@ jobs:
 
       # This is specific to Nightly test 2/2.
       # Here, we generate new lockfiles
-      - run: npm install
+      - run: yarn
         working-directory: ${{github.workspace}}
 
       - run: yarn run build
@@ -76,7 +76,7 @@ jobs:
 
       # This is specific to Nightly test 2/2.
       # Here, we generate new lockfiles
-      - run: npm install
+      - run: yarn
         working-directory: ${{github.workspace}}
 
       # This is specific to Nightly test 3/2.
@@ -111,7 +111,7 @@ jobs:
 
       # This is specific to Nightly test 2/2.
       # Here, we generate new lockfiles
-      - run: npm install
+      - run: yarn
         working-directory: ${{github.workspace}}
 
       - run: yarn run build
