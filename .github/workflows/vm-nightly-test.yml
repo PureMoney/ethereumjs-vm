@@ -20,9 +20,8 @@ jobs:
       - uses: actions/checkout@v1
 
       # This is specific to Nightly test 1/2.
-      # The job needs to run with a fresh combination of lockfiles, to warm up the cache.
-      # So in this step, we remove the lockfiles
-      - run: rm package-lock.json packages/*/package-lock.json
+      # The job needs to run with a fresh lockfile.
+      - run: rm yarn.lock
         working-directory: ${{github.workspace}}
 
       # This is specific to Nightly test 2/2.
@@ -45,9 +44,8 @@ jobs:
       - uses: actions/checkout@v1
 
       # This is specific to Nightly test 1/2.
-      # The job needs to run with a fresh combination of lockfiles, to warm up the cache.
-      # So in this step, we remove the lockfiles
-      - run: rm package-lock.json packages/*/package-lock.json
+      # The job needs to run with a fresh lockfile.
+      - run: rm yarn.lock
         working-directory: ${{github.workspace}}
 
       # This is specific to Nightly test 2/2.
@@ -69,9 +67,8 @@ jobs:
       - uses: actions/checkout@v1
 
       # This is specific to Nightly test 1/2.
-      # The job needs to run with a fresh combination of lockfiles, to warm up the cache.
-      # So in this step, we remove the lockfiles
-      - run: rm package-lock.json packages/*/package-lock.json
+      # The job needs to run with a fresh lockfile.
+      - run: rm yarn.lock
         working-directory: ${{github.workspace}}
 
       # This is specific to Nightly test 2/2.
@@ -104,9 +101,8 @@ jobs:
       - uses: actions/checkout@v1
       
       # This is specific to Nightly test 1/2.
-      # The job needs to run with a fresh combination of lockfiles, to warm up the cache.
-      # So in this step, we remove the lockfiles
-      - run: rm package-lock.json packages/*/package-lock.json
+      # The job needs to run with a fresh lockfile.
+      - run: rm yarn.lock
         working-directory: ${{github.workspace}}
 
       # This is specific to Nightly test 2/2.
